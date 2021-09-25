@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registra Viaje</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/viajes'></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='card'>
+
+  <ion-card-header>
+    <ion-title>Datos del Viaje</ion-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item lines="full">
+      <ion-label position="floating">Conductor</ion-label>
+      <ion-input type="text"[(ngModel)]="viaje.conductor"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Costo</ion-label>
+      <ion-input type="text"[(ngModel)]="viaje.costo"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Capacidad</ion-label>
+      <ion-input type="text"[(ngModel)]="viaje.capacidad"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Comuna</ion-label>
+      <ion-input type="text"[(ngModel)]="viaje.comuna"></ion-input>
+    </ion-item>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" (click)="registraViaje()"> Registra Viaje </ion-button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

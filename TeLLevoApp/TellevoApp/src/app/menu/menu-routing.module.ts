@@ -7,7 +7,13 @@ const routes: Routes = [
   {
     path: '',
     component: MenuPage
-  }
+  },  {
+    path: 'viaje',
+    loadChildren: () => import('./viaje/viaje.module').then( m => m.ViajePageModule)
+  },
+
+
+
 ];
 
 @NgModule({
