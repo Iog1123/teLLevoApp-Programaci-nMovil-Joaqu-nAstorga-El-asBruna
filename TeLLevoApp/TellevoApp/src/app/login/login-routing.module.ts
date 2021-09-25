@@ -8,6 +8,17 @@ const routes: Routes = [
     path: '',
     component: LoginPage
   },
+  {
+    path: 'registrarcuenta',
+    loadChildren: () => import('./registrarcuenta/registrarcuenta.module').then( m => m.RegistrarcuentaPageModule)
+  },
+
+  {
+    path: 'recuperarpassword',
+    loadChildren: () => import('./recuperarpassword/recuperarpassword.module').then( m => m.RecuperarpasswordPageModule)
+  },
+ 
+
 
 ];
 
