@@ -17,9 +17,17 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'registrar-cuenta',
-    loadChildren: () => import('./registrar-cuenta/registrar-cuenta.module').then( m => m.RegistrarCuentaPageModule)
+    path: 'registrarcuenta',
+    loadChildren: () => import('./registrarcuenta/registrarcuenta.module').then( m => m.RegistrarcuentaPageModule)
   },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+
+ 
+ 
+
 ];
 
 @NgModule({
