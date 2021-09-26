@@ -1,3 +1,4 @@
+import { convertActionBinding } from '@angular/compiler/src/compiler_util/expression_converter';
 import { Injectable } from '@angular/core';
 import {Viaje} from './viaje.model';
 
@@ -42,4 +43,11 @@ export class ViajeService {
     }
   );
  }
+ getViaje(viajeId: number)
+ {
+    return {
+           ...this.listaViajes.find(viaje => {return viaje.id === viajeId })
+          }
+ }
+
 }
