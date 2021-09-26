@@ -47,6 +47,8 @@ export class LoginPage implements OnInit {
         this.presentToast('Usuario o password no válidos');
       }
     }
+    
+    
 
     else
     {
