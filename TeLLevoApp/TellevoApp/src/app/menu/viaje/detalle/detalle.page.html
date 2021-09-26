@@ -17,12 +17,22 @@
       </ion-avatar>
     </div>
    
-    <div style="padding:2%">
-      <h2>       Destino:    {{viaje.comuna}} </h2> 
-      <h2>       Conductor:  {{viaje.conductor}} </h2>  
-      <h2>       Vacantes:   {{viaje.capacidad}} </h2>
-      <h1>       Valor a pagar:  {{viaje.costo}} </h1>     
-    </div>      
+    
+      <div style="margin:1%"> 
+        <ion-label position="floating">Destino</ion-label>
+        <h1> {{viaje.comuna}} </h1> </div>
+      <div style="margin:1%">
+        <ion-label position="floating">Valor a pagar</ion-label>
+        <h1>       {{viaje.costo}} </h1>
+      </div>
+      <div style="margin:1%">
+        <ion-label position="floating">Conduce</ion-label>
+        <h1>       {{viaje.conductor}} </h1>
+      </div>
+      <div style="margin:1%" > 
+        <h1>       {{viaje.capacidad}} Cupos disponibles</h1>   
+      </div>
+          
  </ion-label> 
 </ion-content>
 
