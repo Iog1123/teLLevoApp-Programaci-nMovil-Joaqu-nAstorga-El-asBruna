@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding ion-text-center">
   <ion-label>
     <div style="padding-left:2%">
       <ion-avatar>
@@ -17,13 +17,14 @@
       </ion-avatar>
     </div>
    
-    
+    <div style="border-bottom: 2px solid cornflowerblue;">
       <div style="margin:1%"> 
         <ion-label position="floating">Destino</ion-label>
-        <h1> {{viaje.comuna}} </h1> </div>
+        <h1> {{viaje.comuna}} </h1> 
+      </div>
       <div style="margin:1%">
         <ion-label position="floating">Valor a pagar</ion-label>
-        <h1>       {{viaje.costo}} </h1>
+        <h1>       ${{viaje.costo}} </h1>
       </div>
       <div style="margin:1%">
         <ion-label position="floating">Conduce</ion-label>
@@ -32,9 +33,9 @@
       <div style="margin:1%" > 
         <h1>       {{viaje.capacidad}} Cupos disponibles</h1>   
       </div>
-          
+    </div>     
  </ion-label> 
+ <ion-button expand="block" (click)="incluirPasajero()"  expand="full" >Incluirme como pasajero</ion-button>
 </ion-content>
-
 
 
