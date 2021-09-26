@@ -25,7 +25,7 @@ export class RecuperarpasswordPage implements OnInit {
   }
 
  
-  registrarUsuarios(){
+  recuperarClave(){
     
     if(this.validateModel(this.DataRecovery)){
       this.usuarioService.addUsuario(this.DataRecovery.nombre.valueOf(),
