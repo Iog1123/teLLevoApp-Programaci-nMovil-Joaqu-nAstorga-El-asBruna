@@ -50,7 +50,7 @@ export class LoginPage implements OnInit {
 
     else
     {
-      this.presentToast('falta completart: '+this.campo);
+      this.presentToast('falta completar: '+this.campo);
     }
 
 
