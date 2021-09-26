@@ -22,7 +22,19 @@ const routes: Routes = [
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
 
- 
+  {
+    path: 'viaje',
+    children : [
+      {
+        path: '',
+        loadChildren: () => import('./menu/viaje/viaje.module').then( m => m.ViajePageModule)
+      },
+      {
+        path: ':viajeId',
+        loadChildren: () => import('./menu/viaje/detalle/detalle.module').then( m => m.DetallePageModule)
+      }
+    ]
+  },
  
 
 ];

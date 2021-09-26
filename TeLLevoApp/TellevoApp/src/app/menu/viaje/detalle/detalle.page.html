@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>Viaje Seleccionado</ion-title>
+
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref='/menu'></ion-back-button>
+      </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label>
+    <div style="padding-left:2%">
+      <ion-avatar>
+        <ion-img src="assets/img/simboloAuto.png"></ion-img>
+      </ion-avatar>
+    </div>
+   
+    <div style="padding:2%">
+      <h2>       Destino:    {{viaje.comuna}} </h2> 
+      <h2>       Conductor:  {{viaje.conductor}} </h2>  
+      <h2>       Vacantes:   {{viaje.capacidad}} </h2>
+      <h1>       Valor a pagar:  {{viaje.costo}} </h1>     
+    </div>      
+ </ion-label> 
+</ion-content>
+
+
+

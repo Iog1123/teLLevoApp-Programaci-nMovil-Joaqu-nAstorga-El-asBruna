@@ -1,12 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Viajes disponibles</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref='/menu'></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-list *ngFor="let viaje of listaViajes">
-    <ion-item [routerLink]="['./', viaje.id]">
+    <ion-item [routerLink]="['/viaje', viaje.id]">
       <ion-avatar>
         <ion-img src="assets/img/autoF.jpg"></ion-img>
       </ion-avatar>

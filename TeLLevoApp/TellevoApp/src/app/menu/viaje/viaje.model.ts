@@ -1,5 +1,5 @@
 export interface Viaje{
-    id: number;
+    id: string;
     conductor: string;
     costo: string;
     capacidad: number;

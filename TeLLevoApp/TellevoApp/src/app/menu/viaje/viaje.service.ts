@@ -9,14 +9,14 @@ export class ViajeService {
 
   listaViajes : Viaje[]=[
     {
-      id: 1,
+      id: '1',
       conductor: "Arturo Sanchez",
       costo: "2000",
       capacidad: 4,
       comuna: "Lo Espejo"
     },
     {
-      id: 2,
+      id: '2',
       conductor: "Camila Hurtado",
       costo: "3000",
       capacidad: 4,
@@ -35,7 +35,7 @@ export class ViajeService {
  {
   this.listaViajes.push(
     {
-      id: this.listaViajes.length+1,
+      id: this.listaViajes.length+1+'',
       conductor,
       costo,
       capacidad,
@@ -43,7 +43,7 @@ export class ViajeService {
     }
   );
  }
- getViaje(viajeId: number)
+ getViaje(viajeId: string)
  {
     return {
            ...this.listaViajes.find(viaje => {return viaje.id === viajeId })
